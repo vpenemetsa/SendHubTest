@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	
+    <LinearLayout 
+		android:id="@+id/header" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="10dp"
+		style="?android:attr/buttonBarStyle"
+		android:gravity="top" >
+		
+		<Button 
+			android:id="@+id/button_create" 
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/add_contact"
+			style="?android:attr/buttonBarButtonStyle" >
+		</Button>
+		
+		<!-- <Button
+			android:id="@+id/button_message"
+			android:layout_width="0dip" 
+			android:layout_height="wrap_content" 
+			android:layout_weight="1"
+			android:text="Send Message"
+			style="?android:attr/buttonBarButtonStyle" >
+		</Button> -->
+		
+		<!-- <Button
+		    android:id="@+id/select_all"
+		    android:layout_height="wrap_content"
+		    android:layout_width="0dip"
+		    android:layout_weight="1"
+		    android:text="Select All" /> -->
+		
+	</LinearLayout>
+    
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/header"
+        android:background="@android:color/darker_gray" />
+    
+	<ListView 
+	    android:id="@+id/contact_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/divider" />
+	
+</RelativeLayout>
+
